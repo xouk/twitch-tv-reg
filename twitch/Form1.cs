@@ -30,52 +30,26 @@ namespace twitch
             while (webBrowser1.ReadyState != WebBrowserReadyState.Complete)
                 Application.DoEvents();
 
-            webBrowser1.Document.Focus(); screanShot();
-            HtmlElementCollection allelements = webBrowser1.Document.All;
-            foreach (HtmlElement webpageelement in allelements)
-            {
-                if (webpageelement.GetAttribute("name") == "email")
-                {
-                    webpageelement.SetAttribute("value", textBox1.Text + "@mektown.ru");
-                }      
-                
-                if (webpageelement.GetAttribute("name") == "login")
-                {
-                    webpageelement.SetAttribute("value", textBox1.Text);
-                }
-                if (webpageelement.GetAttribute("name") == "password")
-                {
-                    webpageelement.SetAttribute("value", "twitch123");
-                }
-               
+            System.Windows.Forms.HtmlDocument doc = webBrowser1.Document;
+            HtmlElementCollection cjlection = doc.GetElementsByTagName("input");
 
-                if (webpageelement.GetAttribute("name") == "password")
-                {
-                    webpageelement.SetAttribute("value", "twitch123");
-                }
-                if (webpageelement.GetAttribute("name") == "date[month]")
-                {
-                    Random random = new Random();
-                    webpageelement.Focus();
-                    webpageelement.SetAttribute("value", random.Next(0, 12).ToString());
-                }
-
-                if (webpageelement.GetAttribute("name") == "password")
-                {
-                    webpageelement.Focus();
-                }
-            }
-
-           
- 
+            foreach (HtmlElement f in cjlection)
+                if (f.Name == "login") { f.InnerText = textBox1.Text; }
             
-          
-            }
+            foreach (HtmlElement f in cjlection)
+                if (f.Name == "password") { f.InvokeMember("click"); f.InnerText = "password"; f.InvokeMember("click"); }
+
+            foreach (HtmlElement f in cjlection)
+                if (f.Name == "email") {f.InnerText = textBox1.Text + "@mektown.ru"; }
+
+            screanShot();
+            textBox2.Text = webBrowser1.DocumentText; 
+} 
 
 
      private void screanShot()
      {
-
+     
          Bitmap bitmap = new Bitmap(600, 600);
          Rectangle bitmapRect = new Rectangle(0, 0, 1300, 1300);
          // This is a method of the WebBrowser control, and the most important part
@@ -94,9 +68,26 @@ namespace twitch
 
          // Save the file in PNG format
          origThumbnail.Save("Screenshot.bmp");
-         origImage.Dispose();
+         //origImage.Dispose();
 
      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
 
