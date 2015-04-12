@@ -1,0 +1,16 @@
+c:\users\xouk\documents\visual studio 2012\Projects\twitch\twitch\bin\Release\twitch.exe.config
+c:\users\xouk\documents\visual studio 2012\Projects\twitch\twitch\bin\Release\twitch.exe
+c:\users\xouk\documents\visual studio 2012\Projects\twitch\twitch\bin\Release\twitch.pdb
+c:\users\xouk\documents\visual studio 2012\Projects\twitch\twitch\bin\Release\HtmlAgilityPack.dll
+c:\users\xouk\documents\visual studio 2012\Projects\twitch\twitch\bin\Release\HtmlAgilityPack.pdb
+c:\users\xouk\documents\visual studio 2012\Projects\twitch\twitch\bin\Release\HtmlAgilityPack.xml
+c:\users\xouk\documents\visual studio 2012\Projects\twitch\twitch\obj\Release\twitch.Form1.resources
+c:\users\xouk\documents\visual studio 2012\Projects\twitch\twitch\obj\Release\twitch.Properties.Resources.resources
+c:\users\xouk\documents\visual studio 2012\Projects\twitch\twitch\obj\Release\twitch.csproj.GenerateResource.Cache
+c:\users\xouk\documents\visual studio 2012\Projects\twitch\twitch\obj\Release\twitch.exe
+c:\users\xouk\documents\visual studio 2012\Projects\twitch\twitch\obj\Release\twitch.pdb
+c:\users\xouk\documents\visual studio 2012\Projects\twitch\twitch\bin\Release\twitch.exe.manifest
+c:\users\xouk\documents\visual studio 2012\Projects\twitch\twitch\bin\Release\twitch.application
+c:\users\xouk\documents\visual studio 2012\Projects\twitch\twitch\obj\Release\twitch.exe.manifest
+c:\users\xouk\documents\visual studio 2012\Projects\twitch\twitch\obj\Release\twitch.application
+c:\users\xouk\documents\visual studio 2012\Projects\twitch\twitch\obj\Release\twitch.csprojResolveAssemblyReference.cache
